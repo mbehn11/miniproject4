@@ -2,14 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/image.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
     <title>Two-Tier Menu Responsive Site</title>
@@ -18,6 +13,44 @@
     <header>
         <a href="index.html" title="Click Here to Return Home"><img src="images/logoimage.jpg" alt=""></a>
     </header>
+
+    <!-- Nav Menu -->
+    <button class="toggle-menu" id="toggle-menu" data-visible="false"></button>
+    <nav class="navmenu" id="navmenu" data-visible="false">
+        <div><a href="index.html">Home</a></div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="imagegallery.html">Gallery <i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="#classicrock">Classic Rock</a>
+                <a href="#punkrock">Punk Rock</a>
+                <a href="#softrock">Soft Rock</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="videogallery.html">Videos <i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="#fusion">Fusion</a>
+                <a href="#modal">Modal</a>
+                <a href="#hardbop">Hard Bop</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="carousel.html">Carousel <i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="#thrash">Thrash</a>
+                <a href="#death">Death Metal</a>
+                <a href="#softrock">Soft Rock</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="#about">About </a></div>
+            <div class="submenu-content">
+                <a href="#classicrock">Classic Rock</a>
+                <a href="#punkrock">Punk Rock</a>
+                <a href="#softrock">Soft Rock</a>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <aside>
@@ -36,9 +69,9 @@
             </div>
         </aside>
         <section>
-            <h3><a href="#about"></a>About Me</h3>
+            <h3><a href="#about">About Me</a></h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate consequuntur laboriosam consequatur totam? Corrupti harum vero praesentium unde tempora quia?</p>
-            <h3><a href="products"></a>Productions</h3>
+            <h3><a href="#products">Productions</a></h3>
             <ul>
                 <li>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, vel?</p>
@@ -50,13 +83,13 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus hic porro earum.</p>
                 </li>
             </ul>
-            <h3><a href="#rock"></a>Rock On</h3>
+            <h3><a href="#rock">Rock On</a></h3>
             <div class="albumcovers">
                 <div><img src="images/albumcovers/grateful-dead-cornell-5-8-1977.jpg" alt=""></div>
                 <div><img src="images/albumcovers/the-beatles-abbey-road.jpg" alt=""></div>
                 <div><img src="images/albumcovers/van-halen-1.jpg" alt=""></div>
             </div>
-            <h3>Frog</h3>
+            <h3><a href="#frog">Frog</a></h3>
             <div class="frog">
                 <h4>This is a frog</h4>
                 <img src="images/frog_13.jpg" alt="">
@@ -71,3 +104,5 @@
     <script src="js/scripts.js"></script>
 </body>
 </html>
+
+<script src="https://kit.fontawesome.com/785e35af14.js" crossorigin="anonymous"></script>

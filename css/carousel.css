@@ -180,13 +180,137 @@ footer p {
     font-variant: small-caps;
 }
 
+/*Image Gallery*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.column img {
+    margin-top: 8px;
+    max-width: 100%;
+    border: 2px ridge goldenrod;
+    border-radius: 10px;
+}
+
+#cornerBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 1em 2em;
+    background-color: rgba(255, 0, 0, 0.389);
+    border: rgba(255, 0, 0, 0.295);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 120%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+/* Carousel */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagecarousel {
+    position: relative;
+    padding-top: 20px;
+}
+
+.image {
+    display: none;
+}
+
+.image:first-of-type {
+    display: block;
+}
+
+.image img {
+    border-radius: 10px;
+    border: 3px ridge goldenrod;
+}
+
+.dots {
+    margin-top: 1em;
+    text-align: center;
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+}
+
+.dot {
+    padding: 7px;
+    background-color: silver;
+    border-radius: 50%;
+}
+
+.active {
+    background-color: gold;
+}
+
+.fadeout {
+    animation: fade 5000ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+footer {
+    padding: 2em 0;
+    font-size: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px ridge silver;
+    margin-top: 2em;
+}   
+
 @media (max-width: 767px) {
     header {
-        justify-content: center;
+        flex-direction: column; 
+        align-items: center; 
+        border-bottom: none; 
+        margin-bottom: 1em; 
+    }
+    header img {
+        padding: 0; 
+        margin-bottom: 0.5em; 
+    }
+
+    header h2 {
+        font-size: 200%; 
+    }
+
+    header h3 {
+        font-size: 150%; 
     }
     header a img {
         max-width: 300px;
         margin: 0 auto;
+    }
+
+    .image img {
+        border-radius: 0; 
+        border: none; 
+        width: 100%; 
+        height: auto;     
     }
 
     .navmenu {
@@ -250,4 +374,15 @@ footer p {
     .thumbs img {
         max-width: 100%;
     }
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .column {
+    flex: 100%;
+    max-width: 100%;
+    }
+   .column img {
+    max-width: 100%;
+   }
 }
